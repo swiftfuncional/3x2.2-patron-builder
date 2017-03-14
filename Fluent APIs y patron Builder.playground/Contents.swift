@@ -31,3 +31,5 @@ class ConnectorBuilder {
 		return connector
 	}
  }
+
+ConnectorBuilder().set(host: "localhost").set(port: 80).build().connect()
