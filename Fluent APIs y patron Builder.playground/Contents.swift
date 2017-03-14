@@ -32,7 +32,6 @@ class ConnectorBuilder {
 	}
  }
 
-let remoteConnector = ConnectorBuilder().set(host: "mihost.com")
+let readyToUseConnector = ConnectorBuilder().set(host: "mihost.com").set(port: 80).build()
 
-remoteConnector.set(port: 80).build().connect()
-remoteConnector.set(port: 8080).build().connect()
+readyToUseConnector.connect()
